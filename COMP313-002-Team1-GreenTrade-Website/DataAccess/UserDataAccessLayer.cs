@@ -7,17 +7,10 @@ using Newtonsoft.Json;
 
 namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
 {
-    public class UserDataAccessLayer
+    public class UserDataAccessLayer: DataAccessLayer
     {
-        string projectId;
-        FirestoreDb fireStoreDb;
-        public UserDataAccessLayer()
-        {
-            string filepath = "C:\\courses\\serviceAccountKey.json";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", filepath);
-            projectId = "green-trade-comp313";
-            fireStoreDb = FirestoreDb.Create(projectId);
-        }
+        
+        public UserDataAccessLayer() : base(){}
 
         public async Task<List<Users>> GetAllUsers()
         {
