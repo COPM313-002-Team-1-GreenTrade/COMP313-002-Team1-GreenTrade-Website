@@ -1,0 +1,14 @@
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\bin\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.deps.json
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\bin\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.runtimeconfig.json
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\bin\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.runtimeconfig.dev.json
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\bin\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.dll
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.csprojAssemblyReference.cache
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.csproj.CoreCompileInputs.cache
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.RazorAssemblyInfo.cache
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.RazorAssemblyInfo.cs
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.AssemblyInfoInputs.cache
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.AssemblyInfo.cs
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.RazorTargetAssemblyInfo.cache
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\bin\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.pdb
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.dll
+C:\courses\Winter2020\comp313\Comp313_GreenTradeWebsite\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.pdb
