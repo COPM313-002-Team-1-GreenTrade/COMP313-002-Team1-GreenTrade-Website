@@ -20,10 +20,16 @@ namespace COMP313_002_Team1_GreenTrade_Website.Controllers
             return objPickups.GetAllPickups();
         }
 
-        [HttpGet("{id}")]
-        public Task<Pickups> Get(string id)
+        [HttpGet("collectors/{id}")]
+        public Task<List<Pickups>> GetCollectors(string id)
         {
-            return objPickups.GetPickupData(id);
+            return objPickups.GetPickupDataByCollectorId(id);
+        }
+
+        [HttpGet("members/{id}")]
+        public Task<List<Pickups>> GetMembers(string id)
+        {
+            return objPickups.GetPickupDataByMemberId(id);
         }
 
         [HttpPost]
@@ -32,10 +38,10 @@ namespace COMP313_002_Team1_GreenTrade_Website.Controllers
             objPickups.AddPickup(pickup);
         }
 
-        [HttpPut]
-        public void Put([FromBody]Pickups pickup)
+        [HttpPut("{id}")]
+        public void Put([FromBody]Pickups pickup, string id)
         {
-            objPickups.UpdatePickup(pickup);
+            objPickups.UpdatePickup(pickup, id);
         }
 
         [HttpDelete("{id}")]

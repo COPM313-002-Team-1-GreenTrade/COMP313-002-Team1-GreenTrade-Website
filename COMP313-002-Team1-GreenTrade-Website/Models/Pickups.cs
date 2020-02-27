@@ -10,8 +10,6 @@ namespace COMP313_002_Team1_GreenTrade_Website.Models
     [FirestoreData]
     public class Pickups
     {
-        [FirestoreDocumentId]
-        public DocumentReference documentId { get ; set; }
         [FirestoreProperty]
         public string additionalInfo { get; set; }
         [FirestoreProperty]
@@ -22,15 +20,15 @@ namespace COMP313_002_Team1_GreenTrade_Website.Models
         public string collectorId { get; set; }
         [FirestoreProperty]
         public string collectorName { get; set; }
-        [FirestoreProperty]
-        public Timestamp fulfilledTime { get; set; }
+        [FirestoreDocumentCreateTimestamp]
+        public Google.Protobuf.WellKnownTypes.Timestamp fulfilledTime { get; set; }
         [FirestoreProperty]
         public string memberId { get; set; }
         [FirestoreProperty]
         public string memberName { get; set; }
         [FirestoreProperty]
         public string memberProfilePicURL { get; set; }
-        [FirestoreProperty]
-        public Timestamp scheduledTime { get; set; }
+        [FirestoreDocumentCreateTimestamp]
+        public Google.Protobuf.WellKnownTypes.Timestamp scheduledTime { get; set; }
     }
 }

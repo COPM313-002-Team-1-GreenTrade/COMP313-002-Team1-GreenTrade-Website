@@ -1,11 +1,8 @@
 ﻿using COMP313_002_Team1_GreenTrade_Website.Models;
 using Google.Cloud.Firestore;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-
 namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
 {
     public class PickupsDataAccessLayer:DataAccessLayer
@@ -51,21 +48,49 @@ namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
             }
         }
 
-        public async Task<Pickups> GetPickupData(string id)
+        public async Task<List<Pickups>> GetPickupDataByCollectorId(string collectorId)
         {
             try
             {
-                DocumentReference docRef = fireStoreDb.Collection("pickups").Document(id);
-                DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
-                if (snapshot.Exists)
+                Query pickupsQuery = fireStoreDb.Collection("pickups").WhereEqualTo("collectorId", collectorId);
+                QuerySnapshot employeeQuerySnapshot = await pickupsQuery.GetSnapshotAsync();
+                List<Pickups> pickupsList = new List<Pickups>();
+                foreach (DocumentSnapshot documentSnapshot in employeeQuerySnapshot.Documents)
                 {
-                    Pickups pickup = snapshot.ConvertTo<Pickups>();
-                    return pickup;
+                    if (documentSnapshot.Exists)
+                    {
+                        Dictionary<string, object> p = documentSnapshot.ToDictionary();
+                        string json = JsonConvert.SerializeObject(p);
+                        Pickups newpickup = JsonConvert.DeserializeObject<Pickups>(json);
+                        pickupsList.Add(newpickup);
+                    }
                 }
-                else
+                return pickupsList;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public async Task<List<Pickups>> GetPickupDataByMemberId(string memberId)
+        {
+            try
+            {
+                Query pickupsQuery = fireStoreDb.Collection("pickups").WhereEqualTo("memberId", memberId);
+                QuerySnapshot employeeQuerySnapshot = await pickupsQuery.GetSnapshotAsync();
+                List<Pickups> pickupsList = new List<Pickups>();
+                foreach (DocumentSnapshot documentSnapshot in employeeQuerySnapshot.Documents)
                 {
-                    return new Pickups();
+                    if (documentSnapshot.Exists)
+                    {
+                        Dictionary<string, object> p = documentSnapshot.ToDictionary();
+                        string json = JsonConvert.SerializeObject(p);
+                        Pickups newpickup = JsonConvert.DeserializeObject<Pickups>(json);
+                        pickupsList.Add(newpickup);
+                    }
                 }
+                return pickupsList;
             }
             catch
             {
@@ -77,7 +102,7 @@ namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
         {
             try
             {
-                DocumentReference PickupRef = fireStoreDb.Collection("pickups").Document(id);
+                Google.Cloud.Firestore.DocumentReference PickupRef = fireStoreDb.Collection("pickups").Document(id);
                 await PickupRef.DeleteAsync();
             }
             catch
@@ -86,11 +111,11 @@ namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
             }
         }
 
-        public async void UpdatePickup(Pickups pickup)
+        public async void UpdatePickup(Pickups pickup, string id)
         {
             try
             {
-                DocumentReference pickupRef = fireStoreDb.Collection("pickups").Document(pickup.documentId.Id);
+                Google.Cloud.Firestore.DocumentReference pickupRef = fireStoreDb.Collection("pickups").Document(id);
                 await pickupRef.SetAsync(pickup, SetOptions.Overwrite);
             }
             catch
