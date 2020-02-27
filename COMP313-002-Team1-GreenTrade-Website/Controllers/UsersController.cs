@@ -20,10 +20,10 @@ namespace COMP313_002_Team1_GreenTrade_Website.Controllers
             return objUsers.GetAllUsers();
         }
 
-        [HttpGet("{id}")]
-        public Task<Users> Get(string id)
+        [HttpGet("{email}")]
+        public Task<List<Users>> Get(string email)
         {
-            return objUsers.GetUserData(id);
+            return objUsers.GetUserData(email);
         }
 
         [HttpPost]
