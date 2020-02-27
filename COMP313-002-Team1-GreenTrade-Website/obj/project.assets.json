@@ -13008,11 +13008,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\courses\\Winter2020\\comp313\\Comp313_GreenTradeWebsite\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website.csproj",
+      "projectUniqueName": "C:\\courses\\Winter2020\\comp313\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website.csproj",
       "projectName": "COMP313-002-Team1-GreenTrade-Website",
-      "projectPath": "C:\\courses\\Winter2020\\comp313\\Comp313_GreenTradeWebsite\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website.csproj",
+      "projectPath": "C:\\courses\\Winter2020\\comp313\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website.csproj",
       "packagesPath": "C:\\Users\\Piyush Sehli\\.nuget\\packages\\",
-      "outputPath": "C:\\courses\\Winter2020\\comp313\\Comp313_GreenTradeWebsite\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website\\obj\\",
+      "outputPath": "C:\\courses\\Winter2020\\comp313\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

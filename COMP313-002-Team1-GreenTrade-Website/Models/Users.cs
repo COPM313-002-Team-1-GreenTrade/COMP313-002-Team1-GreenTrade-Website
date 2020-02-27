@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using COMP313_002_Team1_GreenTrade_Website.Models;
 using Google.Cloud.Firestore;
 
 namespace _COMP313_002_Team1_GreenTrade_Website.Models
@@ -31,17 +32,5 @@ namespace _COMP313_002_Team1_GreenTrade_Website.Models
         public string displayName { get; set; }
         [FirestoreProperty]
         public Address address { get; set; }
-    }
-
-    [FirestoreData]
-    public class Address {
-        [FirestoreProperty]
-        public string city { get; set; }
-        [FirestoreProperty]
-        public string postalCode { get; set; }
-        [FirestoreProperty]
-        public string street { get; set; }
-        [FirestoreProperty]
-        public string province { get; set; }
     }
 }
