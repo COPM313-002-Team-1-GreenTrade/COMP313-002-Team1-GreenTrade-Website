@@ -67,6 +67,7 @@ namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
                             Dictionary<string, object> p = documentSnapshot.ToDictionary();
                             string json = JsonConvert.SerializeObject(p);
                             Users newpickup = JsonConvert.DeserializeObject<Users>(json);
+                            newpickup.uid = documentSnapshot.Id;
                             usersList.Add(newpickup);
                         }
                     }
