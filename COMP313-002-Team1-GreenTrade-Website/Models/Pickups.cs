@@ -11,6 +11,8 @@ namespace COMP313_002_Team1_GreenTrade_Website.Models
     public class Pickups
     {
         [FirestoreProperty]
+        public string uid { get; set; }
+        [FirestoreProperty]
         public string additionalInfo { get; set; }
         [FirestoreProperty]
         public Address address { get; set; }
