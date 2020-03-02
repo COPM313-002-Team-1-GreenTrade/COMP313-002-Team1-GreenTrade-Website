@@ -51,21 +51,32 @@ namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
             }
         }
 
-        public async Task<Users> GetUserData(string id)
+        public async Task<List<Users>> GetUserData(string email)
         {
             try
             {
-                DocumentReference docRef = fireStoreDb.Collection("users").Document(id);
-                DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
-                if (snapshot.Exists)
+                Query docRef = fireStoreDb.Collection("users").WhereEqualTo("email", email);
+                QuerySnapshot snapshot = await docRef.GetSnapshotAsync();
+                if (snapshot.Count>0)
                 {
-                    Users emp = snapshot.ConvertTo<Users>();
-                    emp.uid = snapshot.Id;
-                    return emp;
+                    List<Users> usersList = new List<Users>();
+                    foreach (DocumentSnapshot documentSnapshot in snapshot.Documents)
+                    {
+                        if (documentSnapshot.Exists)
+                        {
+                            Dictionary<string, object> p = documentSnapshot.ToDictionary();
+                            string json = JsonConvert.SerializeObject(p);
+                            Users newpickup = JsonConvert.DeserializeObject<Users>(json);
+                            newpickup.uid = documentSnapshot.Id;
+                            usersList.Add(newpickup);
+                        }
+                    }
+
+                    return usersList;
                 }
                 else
                 {
-                    return new Users();
+                    return null;
                 }
             }
             catch

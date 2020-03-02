@@ -24,6 +24,7 @@ namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
                         Dictionary<string, object> p = documentSnapshot.ToDictionary();
                         string json = JsonConvert.SerializeObject(p);
                         Pickups newpickup = JsonConvert.DeserializeObject<Pickups>(json);
+                        newpickup.uid = documentSnapshot.Id;
                         pickupsList.Add(newpickup);
                     }
                 }
@@ -62,6 +63,7 @@ namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
                         Dictionary<string, object> p = documentSnapshot.ToDictionary();
                         string json = JsonConvert.SerializeObject(p);
                         Pickups newpickup = JsonConvert.DeserializeObject<Pickups>(json);
+                        newpickup.uid = documentSnapshot.Id;
                         pickupsList.Add(newpickup);
                     }
                 }
@@ -87,6 +89,7 @@ namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
                         Dictionary<string, object> p = documentSnapshot.ToDictionary();
                         string json = JsonConvert.SerializeObject(p);
                         Pickups newpickup = JsonConvert.DeserializeObject<Pickups>(json);
+                        newpickup.uid = documentSnapshot.Id;
                         pickupsList.Add(newpickup);
                     }
                 }

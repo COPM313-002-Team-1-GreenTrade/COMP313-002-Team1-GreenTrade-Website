@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using _COMP313_002_Team1_GreenTrade_Website.Models;
 using COMP313_002_Team1_GreenTrade_Website.DataAccess;
+using COMP313_002_Team1_GreenTrade_Website.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,35 +11,35 @@ namespace COMP313_002_Team1_GreenTrade_Website.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class AdminController : ControllerBase
     {
-        UserDataAccessLayer objUsers = new UserDataAccessLayer();
+        AdminDataAccessLayer admin = new AdminDataAccessLayer();
         [HttpGet]
-        public Task<List<Users>> Get()
+        public Task<List<Admin>> Get()
         {
-            return objUsers.GetAllUsers();
+            return admin.GetAllAdmins();
         }
 
         [HttpGet("{email}")]
-        public Task<List<Users>> Get(string email)
+        public Task<List<Admin>> Get(string email)
         {
-            return objUsers.GetUserData(email);
+            return admin.GetAdminByEmail(email);
         }
 
         [HttpPost]
-        public void Post([FromBody] Users employee)
+        public void Post([FromBody] Admin newAdmin)
         {
-            objUsers.AddUser(employee);
+            admin.AddAdmin(newAdmin);
         }
         [HttpPut]
-        public void Put([FromBody]Users employee)
+        public void Put([FromBody]Admin newAdmin)
         {
-            objUsers.UpdateUser(employee);
+            admin.UpdateAdmin(newAdmin);
         }
         [HttpDelete("{id}")]
         public void Delete(string id)
         {
-            objUsers.DeleteUser(id);
+            admin.DeleteAdminbyId(id);
         }
     }
 }
