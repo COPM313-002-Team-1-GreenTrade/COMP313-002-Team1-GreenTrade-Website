@@ -13,4 +13,4 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.1
 WORKDIR /app
 COPY --from=build-env /app/out .
-CMD dotnet COMP313-002-Team1-GreenTrade-Website.dll
+ENTRYPOINT ["dotnet", "COMP313-002-Team1-GreenTrade-Website.dll"]
