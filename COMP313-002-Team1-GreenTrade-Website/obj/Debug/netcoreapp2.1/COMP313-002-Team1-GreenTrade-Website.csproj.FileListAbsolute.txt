@@ -40,3 +40,17 @@ C:\Users\keith\OneDrive\Desktop\Courses Winter 2020\Software Development Project
 C:\Users\keith\OneDrive\Desktop\Courses Winter 2020\Software Development Project 2\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.RazorTargetAssemblyInfo.cache
 C:\Users\keith\OneDrive\Desktop\Courses Winter 2020\Software Development Project 2\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.dll
 C:\Users\keith\OneDrive\Desktop\Courses Winter 2020\Software Development Project 2\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.pdb
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\bin\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.deps.json
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\bin\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.runtimeconfig.json
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\bin\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.runtimeconfig.dev.json
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\bin\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.dll
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\bin\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.pdb
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.csprojAssemblyReference.cache
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.RazorAssemblyInfo.cache
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.RazorAssemblyInfo.cs
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.AssemblyInfo.cs
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.RazorTargetAssemblyInfo.cache
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.dll
+C:\Users\HP\Documents\GitHub\website\COMP313-002-Team1-GreenTrade-Website\COMP313-002-Team1-GreenTrade-Website\obj\Debug\netcoreapp2.1\COMP313-002-Team1-GreenTrade-Website.pdb

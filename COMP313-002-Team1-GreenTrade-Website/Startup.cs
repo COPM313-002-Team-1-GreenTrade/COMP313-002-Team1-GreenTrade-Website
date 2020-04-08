@@ -25,6 +25,7 @@ namespace COMP313_002_Team1_GreenTrade_Website
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -40,7 +41,11 @@ namespace COMP313_002_Team1_GreenTrade_Website
                 app.UseHsts();
             }
 
+            app.UseCors(
+                options => options.AllowAnyOrigin()
+                );
             app.UseHttpsRedirection();
+            
             app.UseMvc();
         }
     }
