@@ -41,5 +41,10 @@ namespace COMP313_002_Team1_GreenTrade_Website.Controllers
         {
             admin.DeleteAdminbyId(id);
         }
+        [HttpGet("credentials")]
+        public Task<bool> credentials([FromBody]Admin newAdmin)
+        {
+            return admin.checkCredentials(newAdmin);
+        }
     }
 }

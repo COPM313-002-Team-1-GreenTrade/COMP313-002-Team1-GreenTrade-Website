@@ -110,5 +110,43 @@ namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
             }
         }
 
+        public async Task<bool> checkCredentials(Admin admin)
+        {
+            try
+            {
+                Query docRef = fireStoreDb.Collection("admin").WhereEqualTo("email", admin.email);
+                QuerySnapshot snapshot = await docRef.GetSnapshotAsync();
+                if (snapshot.Count > 0)
+                {
+                    //List<Admin> adminList = new List<Admin>();
+                    foreach (DocumentSnapshot documentSnapshot in snapshot.Documents)
+                    {
+                        if (documentSnapshot.Exists)
+                        {
+                            Dictionary<string, object> admin1 = documentSnapshot.ToDictionary();
+                            string json = JsonConvert.SerializeObject(admin1);
+                            Admin newAdmin = JsonConvert.DeserializeObject<Admin>(json);
+
+                            if (newAdmin.password==admin.password)
+                            {
+                                return true;
+                            }
+                            
+                        }
+                    }
+
+                    return false;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
     }
 }
