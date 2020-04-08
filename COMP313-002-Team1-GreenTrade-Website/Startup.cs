@@ -42,8 +42,8 @@ namespace COMP313_002_Team1_GreenTrade_Website
             }
 
             app.UseCors(
-                options => options.AllowAnyOrigin()
-                );
+                options => options.AllowAnyOrigin().AllowAnyMethod().WithOrigins("http://localhost:3000")
+                ) ;
             app.UseHttpsRedirection();
             
             app.UseMvc();

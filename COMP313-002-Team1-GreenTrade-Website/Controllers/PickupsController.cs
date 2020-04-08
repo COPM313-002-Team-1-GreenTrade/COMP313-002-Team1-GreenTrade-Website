@@ -20,6 +20,12 @@ namespace COMP313_002_Team1_GreenTrade_Website.Controllers
             return objPickups.GetAllPickups();
         }
 
+        [HttpGet("{id}")]
+        public Task<Pickups> Get(string id)
+        {
+            return objPickups.GetPickupsData(id);
+        }
+
         [HttpGet("collectors/{id}")]
         public Task<List<Pickups>> GetCollectors(string id)
         {

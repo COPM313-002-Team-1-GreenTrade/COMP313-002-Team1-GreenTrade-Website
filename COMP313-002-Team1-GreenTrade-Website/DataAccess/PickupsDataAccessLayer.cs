@@ -36,6 +36,29 @@ namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
             }
         }
 
+        public async Task<Pickups> GetPickupsData(string id)
+        {
+            try
+            {
+                DocumentReference docRef = fireStoreDb.Collection("pickups").Document(id);
+                DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
+                if (snapshot.Exists)
+                {
+                    Pickups pickups = snapshot.ConvertTo<Pickups>();
+                    pickups.uid = snapshot.Id;
+                    return pickups;
+                }
+                else
+                {
+                    return new Pickups();
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
         public async void AddPickup(Pickups pickup)
         {
             try
