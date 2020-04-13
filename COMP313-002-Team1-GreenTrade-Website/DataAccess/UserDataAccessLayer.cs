@@ -85,6 +85,29 @@ namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
             }
         }
 
+        public async Task<Users> GetUsersDataById(string id)
+        {
+            try
+            {
+                DocumentReference docRef = fireStoreDb.Collection("users").Document(id);
+                DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
+                if (snapshot.Exists)
+                {
+                    Users rewards = snapshot.ConvertTo<Users>();
+                    rewards.uid = snapshot.Id;
+                    return rewards;
+                }
+                else
+                {
+                    return new Users();
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
         public async void DeleteUser(string id)
         {
             try

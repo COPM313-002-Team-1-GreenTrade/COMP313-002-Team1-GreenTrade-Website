@@ -12996,29 +12996,30 @@
     ".NETCoreApp,Version=v2.1": [
       "Google.Cloud.Firestore >= 1.1.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
+      "Microsoft.AspNetCore.Cors >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.9"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\keith\\.nuget\\packages\\": {},
+    "C:\\Users\\Piyush Sehli\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\keith\\OneDrive\\Desktop\\Courses Winter 2020\\Software Development Project 2\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website.csproj",
+      "projectUniqueName": "C:\\courses\\Winter2020\\comp313\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website.csproj",
       "projectName": "COMP313-002-Team1-GreenTrade-Website",
-      "projectPath": "C:\\Users\\keith\\OneDrive\\Desktop\\Courses Winter 2020\\Software Development Project 2\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website.csproj",
-      "packagesPath": "C:\\Users\\keith\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\keith\\OneDrive\\Desktop\\Courses Winter 2020\\Software Development Project 2\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website\\obj\\",
+      "projectPath": "C:\\courses\\Winter2020\\comp313\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website.csproj",
+      "packagesPath": "C:\\Users\\Piyush Sehli\\.nuget\\packages\\",
+      "outputPath": "C:\\courses\\Winter2020\\comp313\\COMP313-002-Team1-GreenTrade-Website\\COMP313-002-Team1-GreenTrade-Website\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\keith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Piyush Sehli\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13051,6 +13052,10 @@
             "target": "Package",
             "version": "[2.1.1, )",
             "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.Cors": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           },
           "Microsoft.AspNetCore.Razor.Design": {
             "suppressParent": "All",

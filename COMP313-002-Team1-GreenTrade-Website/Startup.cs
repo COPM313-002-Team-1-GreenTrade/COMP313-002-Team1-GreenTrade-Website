@@ -26,6 +26,7 @@ namespace COMP313_002_Team1_GreenTrade_Website
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +43,9 @@ namespace COMP313_002_Team1_GreenTrade_Website
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseCors(
+                options => options.AllowAnyOrigin().AllowAnyMethod().WithOrigins("http://localhost:3000")
+                );
         }
     }
 }

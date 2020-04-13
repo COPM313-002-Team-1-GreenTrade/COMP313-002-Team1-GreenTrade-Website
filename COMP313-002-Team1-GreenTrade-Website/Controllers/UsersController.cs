@@ -26,6 +26,12 @@ namespace COMP313_002_Team1_GreenTrade_Website.Controllers
             return objUsers.GetUserData(email);
         }
 
+        [HttpGet("id/{id}")]
+        public Task<Users> GetById(string id)
+        {
+            return objUsers.GetUsersDataById(id);
+        }
+
         [HttpPost]
         public void Post([FromBody] Users employee)
         {
