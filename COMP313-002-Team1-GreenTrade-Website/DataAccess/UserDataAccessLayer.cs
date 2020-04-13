@@ -93,9 +93,9 @@ namespace COMP313_002_Team1_GreenTrade_Website.DataAccess
                 DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
                 if (snapshot.Exists)
                 {
-                    Users rewards = snapshot.ConvertTo<Users>();
-                    rewards.uid = snapshot.Id;
-                    return rewards;
+                    Users users = snapshot.ConvertTo<Users>();
+                    users.uid = snapshot.Id;
+                    return users;
                 }
                 else
                 {
